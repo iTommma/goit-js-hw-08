@@ -27,8 +27,39 @@ new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
-// $('.gallery a').simpleLightbox({
-//   captionsData: 'alt',
-//   captionPosition: 'bottom',
-//   captionDelay: 250,
-// });
+
+// >> Test
+
+// const abc = {
+//   one: 123,
+//   two: "234",
+//   three: true
+// }
+
+// const abcJson = JSON.stringify(abc)
+// console.log(abcJson);
+
+
+
+
+// // Іменований імпорт:
+// import {square, diag} from './math';
+// console.log(square(5));
+// console.log(diag(5, 6));rer
+
+// // Імпорт як обьект з методами - іменами імпортів:
+// import * as myImport from './math'
+// console.log(myImport.square(5));
+// console.log(myImport.diag(5, 6));
+
+// // Дефолтний імпорт 1 функція, змінна diagNew може мати будь-яке ім'я:
+// import diagNew from "./math";
+// console.log(diagNew(5, 6));
+
+// Дефолтний імпорт декілька функцій, змінна diagNew може мати будь-яке ім'я:
+import diagNew from "./math";
+console.log(diagNew.square(5));
+console.log(diagNew.diag(5, 6));
+
+
+
