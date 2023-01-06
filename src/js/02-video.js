@@ -1,17 +1,18 @@
-import Vimeo from '@vimeo/player';                  // імпрт Vimeo
+import Vimeo from '@vimeo/player';
+import throttle from 'lodash.throttle';
+
 const iframe = document.querySelector('iframe');    // елемент 'iframe'
 const player = new Vimeo(iframe);                   // створення елементу класу Vimeo з привьязаним 'iframe'
 
 // localStorage.clear();
-const currentTime = localStorage.getItem('vimeo-current-time') + 0;     // збережений час зупинки
+const currentTime = localStorage.getItem('videoplayer-current-time') + 0;     // збережений час зупинки
 
 player.setCurrentTime(currentTime);                 // встановлення збереженого часу
 
 const onTimeupdate = function (event) {
-    localStorage.setItem('vimeo-current-time', event.seconds);          // збереження часу зупинки
+    localStorage.setItem('videoplayer-current-time', event.seconds);          // збереження часу зупинки
 }
-player.on('timeupdate', onTimeupdate);              // відслідковування події timeupdate
-
+player.on('timeupdate', throttle(onTimeupdate, 1000));              // відслідковування події timeupdate
 
 
 
