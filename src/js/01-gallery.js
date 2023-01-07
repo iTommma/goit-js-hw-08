@@ -28,7 +28,7 @@ new SimpleLightbox('.gallery a', {
 });
 
 
-// >> Test
+// >>> TEST
 
 // const abc = {
 //   one: 123,
@@ -39,8 +39,7 @@ new SimpleLightbox('.gallery a', {
 // const abcJson = JSON.stringify(abc)
 // console.log(abcJson);
 
-
-
+// >>>
 
 // // Іменований імпорт:
 // import {square, diag} from './math';
@@ -56,10 +55,10 @@ new SimpleLightbox('.gallery a', {
 // import diagNew from "./math";
 // console.log(diagNew(5, 6));
 
-// Дефолтний імпорт декілька функцій, змінна diagNew може мати будь-яке ім'я:
-import diagNew from "./math";
-console.log(diagNew.square(5));
-console.log(diagNew.diag(5, 6));
+// // Дефолтний імпорт декілька функцій, змінна diagNew може мати будь-яке ім'я:
+// import diagNew from "./math";
+// console.log(diagNew.square(5));
+// console.log(diagNew.diag(5, 6));
 
 
 
