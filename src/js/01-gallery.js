@@ -1,5 +1,3 @@
-
-
 // Описаний в документації
 import SimpleLightbox from 'simplelightbox';
 // Додатковий імпорт стилів
@@ -26,6 +24,8 @@ new SimpleLightbox('.gallery a', {
   captionPosition: 'bottom',
   captionDelay: 250,
 });
+
+
 
 
 // >>> TEST
@@ -59,6 +59,3 @@ new SimpleLightbox('.gallery a', {
 // import diagNew from "./math";
 // console.log(diagNew.square(5));
 // console.log(diagNew.diag(5, 6));
-
-
-
